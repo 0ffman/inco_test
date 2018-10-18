@@ -39,3 +39,11 @@ img {
   left: -9999px;
   top: -9999px;
 }
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
