@@ -228,6 +228,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
 }
+/*ASIDE*/
 .sidebar {
   width: 250px;
 }
@@ -321,3 +322,100 @@ img {
   background-image: url(../img/icon14-user.png);
   background-repeat: no-repeat;
 }
+/*END ASIDE*/
+/*SECTION DOCUMENTS*/
+.documents {
+  
+  width: calc(100% - 250px);
+}
+.documents__title {
+  margin-top: 65px;
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 30px;
+}
+.form-comments {
+  margin-bottom: 35px;
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+.form-comments__message {
+  margin-bottom: 40px;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.form-comments__text {
+  margin-bottom: 25px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+}
+.form-comments__button {
+  display: inline-block;
+  width: 123px;
+  padding: 11px;
+  color: #ffffff;
+  background-color: #f4b936;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+.message__field {
+  position: relative;
+  padding-left: 40px;
+  margin-right: 15px;
+}
+.message__field--date,
+.message__field--time {
+  padding-left: 25px;
+}
+.message__field::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top:50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon14-user.png);
+  background-repeat: no-repeat;
+}
+.message__field--user::before {
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/avatar-icon.png);
+}
+.message__field--date::before {
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/icon14-calendar.png);
+}
+.message__field--time::before {
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/icon14-clock.png);
+}
+.message__text {
+  width: 640px;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  padding: 20px 68px 25px 43px;
+  border: 2px solid #f9dc9a;
+  border-radius: 3px;
+}
+.message--user-2 .message__text {
+  background-color: #ebebeb;
+  border: none;
+}
+.message__comment {
+  margin: 0;
+}
+/*END SECTION DOCUMENTS*/
