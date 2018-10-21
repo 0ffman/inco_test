@@ -214,3 +214,110 @@ img {
   background-position: center center;
 }
 /*END HEADER-BOTTOM*/
+/* MAIN CONTENT*/
+.main-content__title {
+  margin: 0;
+  padding-top: 50px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid #d6d6d6;
+}
+.main-content__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sidebar {
+  width: 250px;
+}
+.sidebar-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.sidebar-list__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+.sidebar-list__item::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top:50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon14-user.png);
+  background-repeat: no-repeat;
+}
+.sidebar-list__item--user::before {
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/avatar-icon.png);
+}
+/*Кнопки в сайдбаре, лишние пробелы у inline-block не убраны*/
+.sidebar__button {
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  padding: 55px 10px 20px 10px;
+  color: #f4b936;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 3px;
+  border: 1px solid #f4b936;
+  cursor: pointer;
+}
+.sidebar__button--good {
+  border: 1px solid #39b54a;
+  color: #39b54a;
+}
+.sidebar__button--bad {
+  border: 1px solid #ff3354;
+  color: #ff3354;
+}
+.sidebar__button::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top:40%;
+  transform: translate(-50%,-40%);
+  background-image: url(../img/icon14-user.png);
+  background-repeat: no-repeat;
+}
+.sidebar__button--good::before {
+  background-image: url(../img/icon20-vote-yes.png);
+}
+.sidebar__button--bad::before {
+  background-image: url(../img/icon20-vote-no.png);
+}
+.sidebar__button--download::before {
+  background-image: url(../img/icon1817-download.png);
+}
+.sidebar__button--print::before {
+  background-image: url(../img/icon1817-print.png);
+}
+/*end button*/
+.sidebar__vote {
+  position: relative;
+  padding-left: 40px;
+}
+.sidebar__vote::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top:50%;
+  transform: translateY(-50%);
+  background-image: url(../img/icon14-user.png);
+  background-repeat: no-repeat;
+}
